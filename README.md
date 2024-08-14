@@ -13,7 +13,7 @@ This model is then compared to an Azure AutoML run.
 
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+**We are generating a tabular dataset from the provided link and, after preprocessing, we use it to train a Scikit-learn logistic regression model. We then optimize its hyperparameters, `C` and `max_iter`, using Azure ML's Hyperdrive. Once the optimal parameters are identified, we run an AutoML experiment using the same dataset. AutoML attempts to determine which algorithm yields the best accuracy given the configuration. Finally, we will compare and evaluate which approach produces better models.**
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
